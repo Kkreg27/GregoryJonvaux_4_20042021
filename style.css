@@ -1,3 +1,13 @@
+@font-face {
+  src: url("fonts/Kingthings Petrock.ttf");
+  font-family: "Kingthings";
+}
+
+@font-face {
+  src: url("fonts/Kingthings Petrock light.ttf");
+  font-family: "Petrock";
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -12,8 +22,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -30,13 +41,21 @@ a {
           align-items: center;
 }
 
-.block-header .block-header__element-logo img {
-  height: 80px;
-  margin-right: 20px;
+.block-header .block-header__element-logo a {
+  border: none;
+  outline: none;
+}
+
+.block-header .block-header__element-logo a img {
+  height: 50px;
+  margin: 20px;
+  border-radius: 5px;
 }
 
 .block-header .block-header__element-logo h1 {
-  font-size: 150%;
+  font-size: 300%;
+  font-family: Petrock;
+  font-weight: lighter;
 }
 
 .block-header .block-header__element-menu ul {
@@ -44,10 +63,11 @@ a {
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
+  margin-right: 200px;
 }
 
 .block-header .block-header__element-menu ul li {
-  margin-right: 30px;
+  margin-right: 20px;
   margin-top: 15px;
 }
 
@@ -55,32 +75,49 @@ a {
   color: black;
   text-decoration: none;
   font-weight: normal;
+  font-size: 20px;
 }
 
 .block-main .block-main__element-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-image: url("img/la-chouette-agence-banniere.jpg");
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  padding: 200px;
-  margin-top: 10px;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
   text-align: center;
   text-decoration: none;
 }
 
+.block-main .block-main__element-contact img {
+  height: 200px;
+  width: 200px;
+  padding: 30px;
+  margin: 0 auto;
+}
+
 .block-main .block-main__element-contact a {
-  background: #c27956;
+  border: none;
+  outline: none;
+  background: red;
+  background: linear-gradient(353deg, red 0%, #ed6b0d 50%, #ffc400 100%);
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
   padding: 12px 28px 12px 28px;
-  font-size: 16px;
-  font-weight: 700;
+  width: 30%;
+  margin: 0 auto;
   font-family: "helvetica";
+  font-size: 20px;
+  font-weight: 700;
   border-radius: 40px;
-}
-
-.block-main .block-main__element-contact a:hover {
-  background: #f3976c;
-  color: #ffffff;
 }
 
 .block-main .block-main__element-services h2 {
@@ -98,21 +135,32 @@ a {
 }
 
 .block-main .block-main__element-services .block-main__element-service .service {
-  width: 33.33333333%;
-  height: 33%;
+  width: 400px;
+  height: 400px;
   margin: 20px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-box-shadow: grey 1px 1px 10px;
+          box-shadow: grey 1px 1px 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.block-main .block-main__element-services .block-main__element-service .service h3 {
-  margin-left: 25%;
+.block-main .block-main__element-services .block-main__element-service .service p {
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 0;
+  font-size: 15px;
 }
 
 .block-main .block-main__element-services .block-main__element-service .service span {
+  margin-top: 40px;
   font-size: 100px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 25%;
 }
 
 .block-main .block-main__element-services figure {
@@ -124,6 +172,8 @@ a {
 
 .block-main .block-main__element-slogan {
   background-image: url("img/image-de-presentation.bmp");
+  background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
   padding: 100px;
   text-align: center;
@@ -131,27 +181,181 @@ a {
 
 .block-main .block-main__element-slogan .block-main__element-slogan--fondvert {
   width: 80%;
-  background-color: rgba(165, 147, 99, 0.7);
-  border-radius: 10px;
+  border: solid 1px white;
+  background: white;
+  border-radius: 20px;
   padding: 10px;
   margin: auto auto auto auto;
 }
 
 .block-main .block-main__element-slogan .block-main__element-slogan--fondvert h2 {
-  font-weight: bold;
   font-size: 250%;
+  margin: 40px;
 }
 
 .block-main .block-main__element-slogan .block-main__element-slogan--fondvert p {
   font-size: 150%;
+  margin: 40px;
 }
 
-.block-main .block-main__element-slogan .block-main__element-slogan--fondvert p a {
-  font-size: 200%;
-  background-color: #507a50;
-  color: white;
-  border-radius: 15px;
-  padding: 5px;
+.block-main .block-main__element-slogan .block-main__element-slogan--fondvert--bouton {
+  margin-top: 80px;
+}
+
+.block-main .block-main__element-slogan .block-main__element-slogan--fondvert--bouton a {
+  border: none;
+  outline: none;
+  background: red;
+  background: linear-gradient(353deg, red 0%, #ed6b0d 50%, #ffc400 100%);
+  color: #ffffff;
+  text-transform: uppercase;
   text-decoration: none;
+  padding: 12px 28px 12px 28px;
+  font-size: 40px;
+  font-family: "helvetica";
+  border-radius: 40px;
+}
+
+.block-main .block-main__element-portfolio h2 {
+  text-align: center;
+  margin: 5%;
+}
+
+.block-main .block-main__element-portfolio .block-main__element-photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.block-main .block-main__element-portfolio .block-main__element-photos a {
+  width: 35%;
+  text-align: center;
+  color: black;
+  margin-bottom: 10%;
+  text-decoration: none;
+  outline: none;
+}
+
+.block-main .block-main__element-cta {
+  background-image: url("img/image-de-presentation.bmp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 100px;
+  text-align: center;
+}
+
+.block-main .block-main__element-cta a {
+  color: black;
+  text-transform: none;
+  text-decoration: none;
+  outline: none;
+}
+
+.block-main .block-main__element-cta a h2 {
+  font-weight: 700;
+  outline: none;
+}
+
+.block-footer .block-footer__element-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 70px;
+}
+
+.block-footer .block-footer__element-logos a {
+  font-size: 50px;
+  color: #fa5c00;
+  outline: none;
+}
+
+.block-main1 .block-main1__element-acroche {
+  text-align: center;
+  background-color: rgba(248, 187, 164, 0.5);
+}
+
+.block-main1 .block-main1__element-acroche h2 {
+  margin: 0;
+  color: #5f1d06;
+  padding: 50px;
+  font-size: 90px;
+  font-weight: lighter;
+}
+
+.block-main1 .block-main1__element-formulaire p:nth-child(1) {
+  text-align: center;
+  font-size: 30px;
+  font-weight: lighter;
+  padding: 40px;
+}
+
+.block-main1 .block-main1__element-formulaire .block-main1__element-saisie {
+  width: 50%;
+  padding: 50px;
+  margin: 0 auto;
+  text-align: left;
+  border-radius: 10px;
+  background-color: rgba(248, 187, 164, 0.5);
+  outline: none;
+  border: none;
+  font-size: 20px;
+}
+
+.block-main1 .block-main1__element-formulaire .block-main1__element-saisie .saisie {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+.block-main1 .block-main1__element-formulaire .block-main1__element-saisie .saisie input {
+  outline: none;
+  border: none;
+  height: 40px;
+  font-size: 20px;
+}
+
+.block-main1 .block-main1__element-formulaire .block-main1__element-saisie--votre-projet {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.block-main1 .block-main1__element-formulaire .block-main1__element-saisie--votre-projet textarea {
+  outline: none;
+  border: none;
+  width: 100%;
+  font-size: 20px;
+}
+
+.block-main1 .block-main1__element-formulaire .block-main1__element-saisie--btn-envoyer {
+  border: none;
+  font-size: 20px;
+  background-color: white;
+}
+
+.block-main1 .block-main1__element-formulaire p:nth-child(3) {
+  padding: 40px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: lighter;
 }
 /*# sourceMappingURL=style.css.map */
