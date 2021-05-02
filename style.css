@@ -79,7 +79,7 @@ a {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  background-image: url("img/la-chouette-agence-banniere.jpg");
+  background-image: url("img/baniere_2.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -174,7 +174,7 @@ a {
 }
 
 .block-main .block-main__element-slogan {
-  background-image: url("img/image-de-presentation.bmp");
+  background-image: url("img/baniere_1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -257,7 +257,7 @@ a {
 }
 
 .block-main .block-main__element-cta {
-  background-image: url("img/image-de-presentation.bmp");
+  background-image: url("img/baniere_1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -433,7 +433,7 @@ a {
     margin: 0 auto;
   }
   .block-main .block-main__element-slogan {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/baniere_1.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
