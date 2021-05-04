@@ -480,5 +480,6 @@ a {
   }
   .block-footer .block-footer__element-logos a {
     font-size: 20px;
+    margin: 20px;
   }
 }
