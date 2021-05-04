@@ -258,7 +258,7 @@ a {
   padding: 70px;
 }
 .block-footer .block-footer__element-logos a {
-  font-size: 50px;
+  font-size: 20px;
   color: #fa5c00;
   outline: 0;
 }
@@ -346,6 +346,7 @@ a {
   font-size: 20px;
   font-weight: lighter;
 }
+
 @media all and (max-width: 660px) {
   .block-header > .nav-btn {
     display: inline-block;
