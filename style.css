@@ -249,6 +249,7 @@ a {
   font-weight: 700;
   outline: 0;
 }
+
 .block-footer .block-footer__element-logos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -258,8 +259,9 @@ a {
   padding: 70px;
 }
 .block-footer .block-footer__element-logos a {
-  font-size: 20px;
-  color: #fa5c00;
+  font-size: 15px;
+  text-decoration: none;
+  color: #da5000;
   outline: 0;
 }
 .block-main1 .block-main1__element-acroche {
