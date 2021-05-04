@@ -470,4 +470,12 @@ a {
     font-weight: lighter;
     width: 100%;
   }
+  .block-footer__element-logos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .block-footer .block-footer__element-logos a {
+    font-size: 20px;
+  }
 }
